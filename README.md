@@ -2,8 +2,8 @@
 
 [Lien du site original](https://www.agilos.com/)
 
-[Lien de mon site](https://loicdelanoe-cv.netlify.app/)
+[Lien de mon site]()
 
-[Lien du screencast](https://www.youtube.com/watch?v=9eJg6mgGJSM)
+[Lien du screencast](https://youtu.be/KgeydDle5Kg)
 
 ## Screenshot du site
