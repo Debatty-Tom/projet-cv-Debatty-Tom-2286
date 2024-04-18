@@ -1,111 +1,158 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html class="no-js" lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./src/img/favicon.jpg">
+  <link rel="stylesheet" href="src/scss/base/reset.scss">
+  <link rel="stylesheet" href="./src/scss/style.scss">
+  <title>Tom Debatty</title>
 </head>
 
 <body>
   <header>
-    <h1>Tom Debatty</h1>
-    <nav>
-      <h2 class="hidden">naviguation principale</h2>
-      <a></a>
-      <a></a>
-      <a></a>
-      <a></a>
+    <h1 class="hidden">Accueil</h1>
+    <nav class="nav">
+      <h2 class="hidden">Navigation principale</h2>
+      <a class="nav__title" href="/">Tom Debatty</a>
+      <div class="burger__wrapper">
+        <input type="checkbox" name="burger-toggle" id="burger__toggle">
+        <label class="hidden" for="burger__toggle">Menu dépliant</label>
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="nav__list">
+          <li class="nav__list__wrapper">
+            <a class="nav__list__link" href="/" role="button" title="Aller sur la page d'accueil">Á propos de moi</a>
+          </li>
+          <li class="nav__list__wrapper">
+            <span class="nav__list__link" tabindex="0" role="button" aria-haspopup="true">Mes compétences</span>
+            <div class="sub__list__container">
+              <ul class="sub__list">
+                <li>
+                  <a class="sub__list__link" href="#" title="Aller au contenu Mes Hard skills">Mes Hard skills</a>
+                </li>
+                <li>
+                  <a class="sub__list__link" href="#" title="Aller au contenu Mes Soft skills">Mes Soft skills</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__list__wrapper">
+            <a class="nav__list__link" tabindex="0" role="button" title="Consulter mon parcours">Parcours</a>
+          </li>
+          <li class="nav__list__wrapper">
+            <a class="nav__list__link" tabindex="0" role="button" title="Consulter mes formations">Formations</a>
+          </li>
+        </ul>
+        <ul class="nav__list__secondary">
+          <li class="nav__list__secondary__wrapper">
+            <a class="nav__list__secondary__link" href="#" role="button" title="Consulter mon portfolio">Mes expériences</a>
+          </li>
+          <li class="nav__list__secondary__wrapper">
+            <a class="nav__list__secondary__link" href="#" role="button" title="Aller au formulaire de contact">Contactez moi</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <a></a>
-    <a></a>
   </header>
   <main>
-    <section>
-
-      <div>
-        <h2>
-          Développeur Full Stack
-        </h2>
-        <p>
-          Déterminé à en apprendre plus
-        </p>
-      </div>
-        <h2 class="hidden">Hero</h2>
-        <img src="">
+    <section id="hero" class="hero" itemscope itemtype="https://schema.org/Person">
+      <h2 class="hero__title">
+        <span itemprop="name">Tom</span> <span itemprop="familyName">Debatty</span>
+        <span class="hero__title_underline">Développeur Full Stack</span>
+      </h2>
+      <p>
+        Déterminé à en apprendre plus
+      </p>
+      <img src="" alt="photo de Tom Debatty" width="" height="">
     </section>
-    <section>
-      <aside>
-        <h2 class="hidden"></h2>
-        <img src="">
-      </aside>
-      <div>
-        <h2>
-          Á propos de moi
-        </h2>
-        <p>
-          Je suis un étudiant en développement web, je m’appelle Tom Debatty, je suis né le 12 septembre 2000 et je vis actuellement à Spa en Belgique. J’ai toujours aimé le développement et j’ai pu trouver en cette formation plus qu’un simple apprentissage. J’ai pu y trouver ma voie, un métier qui me passionne vraiment et un milieu qui me pousse a toujours donner le meilleur de moi même.
-        </p>
-      </div>
+    <section id="about" class="about section">
+        <h2 class="hidden">Á propos de moi</h2>
+        <img class="img" src="" alt="" width="" height="">
+        <div class="about__wrapper">
+          <h3 class="about__wrapper__title">Á propos de moi</h3>
+          <p>
+            Je suis un étudiant en développement web, je m’appelles Tom Debatty, je suis né le 12 septembre 2000 et je vis actuellement à Spa en Belgique. J’ai toujours aimé le développement et j’ai pus trouver en cette formation plus qu’un simple apprentissage. J’ai pus y trouver ma voie, un métier qui me passionne vraiment et un milieu qui me pousse a toujours donner le meilleur de moi même.
+          </p>
+        </div>
     </section>
     <section>
       <h2>
-
+        Mes Hard skills
       </h2>
       <div>
         <ul>
-
+          <li>Html</li>
+          <li>Css</li>
+          <li>JS</li>
+          <li>TS</li>
+          <li>NodeJS</li>
+          <li>Php</li>
+          <li>Sql</li>
+          <li>Webgl</li>
+          <li>React</li>
+          <li>git</li>
+          <li>github</li>
+          <li>Photoshop</li>
+          <li>illustrator</li>
+          <li>adobeXd</li>
+          <li>inDesign</li>
+          <li>Maya</li>
+          <li>Blender</li>
         </ul>
       </div>
     </section>
-    <section>
-      <h2>
-
-      </h2>
-      <p>
-
-      </p>
-      <a></a>
+    <section id="career" class="career section">
+      <h2 class="hidden">carrer section</h2>
+      <div class="career__wrapper">
+        <h3 class="career__wrapper__title">Mon parcours</h3>
+        <p>
+          Après mon diplôme de dernière année secondaire, je me suis orienté vers des études d’architecture à l’université de Liège car c’était un rêve depuis toujours. Malheureusement au fil des années je me suis rendu compte que ce métier n’était pas fait pour moi. Après trois ans j’ai donc décidé de changer de formation et ai découvert l’infographie qui m’a tout de suite conquis.
+        </p>
+        <a>MON PORTFOLIO </a>
+      </div>
+      <img class="img" src="" alt="" width="" height="">
     </section>
-    <section>
-      <article>
-        <h2>
-
-        </h2>
+    <section class="formation section">
+      <h2 id="formation" class="hidden">Formations section</h2>
+      <div class="formation__wrapper">
+        <h3 class="formation__wrapper__title">Études d’architecture à l’Université de Liège</h3>
         <p>
 
         </p>
-      </article>
-      <article>
-        <h2>
-
-        </h2>
+      </div>
+      <div class="formation__wrapper">
+        <h3 class="formation__wrapper__title">Études d’infographie à la Haute École de la Province de Liège</h3>
         <p>
 
         </p>
-      </article>
+      </div>
     </section>
     <section>
       <h2>
-
+        Mes Soft skills
       </h2>
       <div>
         <ul>
-
+          <li>motivation</li>
+          <li>Adaptabilité</li>
+          <li>Amabilité</li>
+          <li>Avidité d’apprendre</li>
+          <li>Capacité à progresser</li>
+          <li>Capacité d’écoute</li>
+          <li>Discipline</li>
+          <li>Dynamisme</li>
+          <li>Organisation</li>
+          <li>Indépendance</li>
+          <li>Concentration</li>
+          <li>Esprit d’équipe</li>
+          <li>Persévérance</li>
+          <li>sociabilité</li>
         </ul>
       </div>
     </section>
@@ -125,22 +172,14 @@
 
       </ul>
     </section>
-    <section>
-      <aside>
-        <h2 class="hidden"></h2>
-        <img src="">
-      </aside>
-      <article>
-        <h2>
-
-        </h2>
-        <p>
-
-        </p>
-        <a>
-
-        </a>
-      </article>
+    <section class="contact section">
+      <h2 class="hidden">contact section</h2>
+      <img src="" alt="" width="" height="">
+      <div class="contact__container">
+          <h3>Me contacter</h3>
+          <p>Si mon profil vous intéresse, n’hésitez pas à me contacter par mail,&nbsp;téléphone,&nbsp;ou encore par ce formulaire.</p>
+          <a href="#" class="contact__link">Contactez moi</a>
+      </div>
     </section>
     <section>
       <h2>
@@ -149,20 +188,94 @@
       <p>
 
       </p>
-      <form>
-        <label></label>
-        <input>
-        <label></label>
-        <input>
-        <label></label>
-        <input>
-        <button></button>
+      <form id="footerContact" action="#" method="POST">
+        <h3>Envoyez moi un mail</h3>
+        <label for="contactName">Nom :</label>
+        <input type="text" name="name" id="contactName" placeholder="Tom Debatty...">
+        <label for="contactEmail">Email :</label>
+        <input type="email" name="email" id="contactEmail" placeholder="tom.debaaty@example.com...">
+        <label for="message">Message :</label>
+        <textarea cols="30" id="message" name="message" rows="10" placeholder="Je veux travailler avec vous..."></textarea>
+        <button type="submit">Contactez moi</button>
       </form>
     </section>
   </main>
   <footer>
+    <section>
+      <h2 class="hidden">Footer</h2>
+      <nav class="footer__nav base-container">
+        <h3>
+          <a class="footer__nav__title" href="#" title="Remonter en haut de la page" role="button">Debatty Tom</a>
+        </h3>
+        <div>
+          <ul>
+            <li>
+              <p>
+                Clos des Fauvettes 3, 4900 Spa, Belgique
+              </p>
+            </li>
+            <li>
+              <p>
+                tom.debatty@hotmail.be
+              </p>
+            </li>
+            <li>
+              <p>
+                +32 471/56.64.98
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="footer__nav__list">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À Propos</a></li>
+            <li><a href="#">Formations</a></li>
+            <li><a href="#">Compétences</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <ul class="social__list">
+          <li>
+            <a href="https://www.facebook.com" class="social__button facebook">Facebook</a>
+          </li>
+          <li><a href="https://www.instagram.com" class="social__button instagram">Instagram</a></li>
+          <li><a href="https://www.twitter.com" class="social__button twitter">Twitter</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <h2 class="hidden">credit section</h2>
 
+    </section>
   </footer>
 </body>
 
+</html>
+
+
+<footer>
+
+  <ul class="contact__list footer base-container">
+    <li>
+      <h3>Contact</h3>
+      <address>Téléphone&nbsp;:&nbsp;
+        <a href="tel:+33604014765">+ 33 (0)6 04 01 47 65</a>
+      </address>
+    </li>
+    <li>
+      <h3>Coordonnées</h3>
+      <address itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="streetAddress">Rue Coquelicot,&nbsp;13</span>,
+        <span itemprop="postalCode">4000</span>
+        <span itemprop="addressLocality">Liège</span>
+      </address>
+    </li>
+    <li>
+
+    </li>
+  </ul>
+</footer>
+<script type="module" src="./src/js/main.js"></script>
+</body>
 </html>

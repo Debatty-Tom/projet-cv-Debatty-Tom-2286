@@ -1,0 +1,54 @@
+body {
+  background-color: white;
+  font-family: Urbanist sans-serif;
+  font-size: 11pt;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+.nav {
+  display: flex;
+
+}
+
+
+
+
+.nav {
+  &__title {
+
+  }
+  &__list {
+    &__wrapper{
+
+    }
+    &__link{
+
+    }
+  }
+
+}
+
+
+main {
+  padding: 10px;
+  background-color: #F7F8FF;
+}
+
+
+
+
+
+
